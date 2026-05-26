@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f172a;
+  color: #f8fafc;
+}
+.container {
+  background-color: #1e293b;
+  box-shadow: 0 0 25px rgba(139, 92, 246, 0.3);
+  height: 480px;
+  width: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 16px;
+  padding: 10px 12px;
+  border: 1px solid #334155;
+  backdrop-filter: blur(5px);
+}
+.container > h2 {
+  font-size: 28px;
+}
+.length-box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+#length {
+  background-color: #334155;
+  color: white;
+  border: 1px solid #475569;
+  height: 40px;
+  border-radius: 10px;
+  padding: 0 10px;
+  font-size: 16px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 15px;
+}
+.card > #showPass {
+  background-color: #334155;
+  color: white;
+  border: 1px solid #475569;
+  width: 400px;
+  height: 50px;
+  border-radius: 10px;
+}
+#showPass[placeholder] {
+  padding: 0px 10px;
+}
+.card > label {
+  font-size: 15px;
+}
+.card input[type="checkbox"] {
+  height: 18px;
+  width: 18px;
+  accent-color: #8b5cf6;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 0 12px;
+}
+.option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+}
+.card > .label {
+  font-size: 16px;
+  font-weight: 700;
+}
+.card > button {
+  background-color: #8b5cf6;
+  height: 42px;
+  border-radius: 15px;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #f8fafc;
+  border: none;
+}
+.card > button:hover {
+  background-color: #7c3aed;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+.card > button:active {
+  scale: 0.95;
+}

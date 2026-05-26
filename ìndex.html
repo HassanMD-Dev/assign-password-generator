@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="data:image/jpeg;base64,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"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Password Generator</h2>
+      <div class="card">
+        <input
+          type="text"
+          name="text"
+          id="showPass"
+          placeholder="Generated Password"
+        />
+        <div class="length-box">
+          <label for="length" class="label">Password Length</label>
+          <input type="number" id="length" min="4" max="20" value="12" />
+        </div>
+        <div class="option">
+          <input type="checkbox" name="upper" id="upper" />
+          <label for="upper" class="label">Uppercase</label>
+        </div>
+        <div class="option">
+          <input type="checkbox" name="lower" id="lower" />
+          <label for="lower" class="label">Lowercase</label>
+        </div>
+        <div class="option">
+          <input type="checkbox" name="number" id="number" />
+          <label for="number" class="label">Numbers</label>
+        </div>
+        <div class="option">
+          <input type="checkbox" name="symbol" id="symbol" />
+          <label for="symbol" class="label">Symbols</label>
+        </div>
+        <button type="submit" id="generatePass">Generate Password</button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
